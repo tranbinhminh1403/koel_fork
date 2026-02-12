@@ -1,0 +1,1 @@
+import{a2 as s}from"./index-BkWZXSgm.js";import{B as c}from"./BtnScrollToTop-BD4d9f2T.js";const u=(e,i)=>{s(e,i,{distance:32});let n=0;const r=5,t=async()=>{const o=e.value;if(!o){window.setTimeout(()=>t(),200);return}o.scrollHeight<=o.clientHeight&&n<r&&(n++,await i(),window.setTimeout(()=>t(),200))};return{ToTopButton:c,makeScrollable:t}};export{u};

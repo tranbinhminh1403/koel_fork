@@ -1,0 +1,1 @@
+import{ae as e}from"./index-BkWZXSgm.js";import{g as n,i as a,j as s,o as t,s as c,q as r}from"./socketService-CcqICTEx.js";const p={class:"!opacity-50"},u=n({__name:"ExternalMark",setup(_){return(i,m)=>{const o=a("Icon");return t(),s("span",p,[c(o,{icon:r(e)},null,8,["icon"])])}}});export{u as _};

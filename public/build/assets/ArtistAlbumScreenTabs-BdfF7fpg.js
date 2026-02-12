@@ -1,0 +1,1 @@
+import{_ as n,j as r,o as t,k as s,a2 as a}from"./socketService-CcqICTEx.js";const o={},d={class:"tabs"};function c(e,l){return t(),r("div",d,[s("header",null,[a(e.$slots,"header",{},void 0,!0)]),s("main",null,[a(e.$slots,"default",{},void 0,!0)])])}const u=n(o,[["render",c],["__scopeId","data-v-b9aed514"]]);export{u as S};

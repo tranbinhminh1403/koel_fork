@@ -1,0 +1,1 @@
+import{_ as t,j as e,o as a,F as n,B as r,k as c}from"./socketService-CcqICTEx.js";const o={},_={class:"relative flex gap-1 content-between w-[13px] aspect-square"};function d(l,p){return a(),e("i",_,[(a(),e(n,null,r(3,s=>c("span",{key:s})),64))])}const i=t(o,[["render",d],["__scopeId","data-v-55663067"]]);export{i as default};

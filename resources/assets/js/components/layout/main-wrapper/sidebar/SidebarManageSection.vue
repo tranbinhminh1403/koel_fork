@@ -9,7 +9,7 @@
         <template #icon>
           <Icon :icon="faTools" fixed-width />
         </template>
-        Cài dặt
+        Cài đặt
       </SidebarItem>
       <SidebarItem v-if="canUpload" :href="url('upload')" :active="isCurrentScreen('Upload')">
         <template #icon>

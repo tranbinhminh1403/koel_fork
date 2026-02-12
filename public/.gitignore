@@ -19,5 +19,5 @@ manifest-remote.json
 hot
 mix-manifest.json
 .user.ini
-build
+# build
 .htaccess

@@ -39,7 +39,7 @@
             @click.prevent="shuffle"
           >
             <Icon :icon="faRandom" fixed-width />
-            All
+            Tất cả
           </Btn>
 
           <Btn
@@ -52,7 +52,7 @@
             @click.prevent="shuffleSelected"
           >
             <Icon :icon="faRandom" fixed-width />
-            Selected
+            Đang chọn
           </Btn>
         </template>
 

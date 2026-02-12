@@ -1,0 +1,1 @@
+import{_ as e,j as t,o as c}from"./socketService-CcqICTEx.js";const s={},n={class:"h-screen flex flex-col items-center justify-center text-xl uppercase tracking-widest opacity-70"};function o(r,a){return c(),t("section",n," Content not available ")}const l=e(s,[["render",o]]);export{l as default};
