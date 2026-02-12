@@ -1,6 +1,6 @@
 <template>
   <HomeScreenBlock>
-    <template #header>Most Played</template>
+    <template #header>Phát nhiều nhất</template>
 
     <PlayableListSkeleton v-if="loading" class="border border-k-fg-5 rounded-lg" />
     <template v-else>

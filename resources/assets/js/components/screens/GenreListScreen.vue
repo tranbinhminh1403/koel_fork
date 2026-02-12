@@ -2,7 +2,7 @@
   <ScreenBase>
     <template #header>
       <ScreenHeader layout="collapsed" :disabled="loading">
-        Genres
+        Thể loại
 
         <template #controls>
           <div class="flex gap-2">

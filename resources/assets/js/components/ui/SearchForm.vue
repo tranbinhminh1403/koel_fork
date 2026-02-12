@@ -42,7 +42,7 @@ import { useRouter } from '@/composables/useRouter'
 
 import TextInput from '@/components/ui/form/TextInput.vue'
 
-const placeholder = isMobile.any ? 'Search' : 'Press F to search'
+const placeholder = isMobile.any ? 'Tìm kiếm' : 'Nhấn F để tìm kiếm'
 
 const { go, url } = useRouter()
 

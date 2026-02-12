@@ -32,7 +32,7 @@ const requestNotificationPermission = async () => {
 }
 
 onMounted(async () => {
-  showOverlay({ message: 'Just a little patience…' })
+  showOverlay({ message: 'Đang tải…' })
 
   try {
     await commonStore.init()

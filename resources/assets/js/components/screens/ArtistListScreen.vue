@@ -2,7 +2,7 @@
   <ScreenBase>
     <template #header>
       <ScreenHeader layout="collapsed" :disabled="loading">
-        Artists
+        Nghệ sĩ
         <template #controls>
           <div class="flex gap-2">
             <Btn

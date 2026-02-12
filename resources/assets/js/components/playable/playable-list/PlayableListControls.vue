@@ -62,7 +62,7 @@
           success
           @click.prevent.stop="toggleAddToMenu"
         >
-          {{ showingAddToMenu ? 'Cancel' : 'Add To…' }}
+          {{ showingAddToMenu ? 'Huỷ' : 'Thêm vào…' }}
         </Btn>
 
         <Btn v-if="config.clearQueue" danger title="Clear current queue" @click.prevent="clearQueue">Clear</Btn>

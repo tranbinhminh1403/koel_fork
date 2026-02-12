@@ -52,15 +52,7 @@ import ScreenBase from '@/components/screens/ScreenBase.vue'
 const { currentUserCan } = usePolicies()
 
 const greetings = [
-  'Oh hai!',
-  'Hey, %s!',
-  'Howdy, %s!',
-  'Yo!',
-  'How’s it going, %s?',
-  'Sup, %s?',
-  'How’s life, %s?',
-  'How’s your day, %s?',
-  'How have you been, %s?',
+  'Chào bạn',
 ]
 
 const greeting = computed(() => userStore.current ? sample(greetings)!.replace('%s', userStore.current.name) : '')

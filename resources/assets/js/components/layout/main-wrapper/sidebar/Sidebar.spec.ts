@@ -6,7 +6,7 @@ import { eventBus } from '@/utils/eventBus'
 import Component from './Sidebar.vue'
 
 const standardItems = [
-  'All Songs',
+  'Danh sách bài hát',
   'Albums',
   'Artists',
   'Genres',

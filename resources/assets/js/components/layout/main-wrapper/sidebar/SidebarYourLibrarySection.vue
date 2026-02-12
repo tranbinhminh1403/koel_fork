@@ -1,7 +1,7 @@
 <template>
   <SidebarSection>
     <template #header>
-      <SidebarSectionHeader>Your Library</SidebarSectionHeader>
+      <SidebarSectionHeader>Thư viện của tôi</SidebarSectionHeader>
     </template>
 
     <ul class="menu">
@@ -9,7 +9,7 @@
         <template #icon>
           <Icon :icon="faMusic" fixed-width />
         </template>
-        All Songs
+        Tất cả bài hát
       </SidebarItem>
       <SidebarItem :href="url('albums.index')" :active="isCurrentScreen('Albums', 'Album')">
         <template #icon>
@@ -21,13 +21,13 @@
         <template #icon>
           <MicVocalIcon :size="16" />
         </template>
-        Artists
+        Nghệ sĩ
       </SidebarItem>
       <SidebarItem :href="url('genres.index')" :active="isCurrentScreen('Genres', 'Genre')">
         <template #icon>
           <GuitarIcon :size="16" />
         </template>
-        Genres
+        Thể loại
       </SidebarItem>
       <YouTubeSidebarItem v-if="youtubeVideoTitle" data-testid="youtube" :active="isCurrentScreen('YouTube')">
         {{ youtubeVideoTitle }}

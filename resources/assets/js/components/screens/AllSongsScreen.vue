@@ -2,7 +2,7 @@
   <ScreenBase>
     <template #header>
       <ScreenHeader :disabled="loading" :layout="songs.length ? headerLayout : 'collapsed'">
-        All Songs
+        Danh sách bài hát
 
         <template #thumbnail>
           <ThumbnailStack :thumbnails />

@@ -1,6 +1,6 @@
 <template>
   <HomeScreenBlock>
-    <template #header>New Songs</template>
+    <template #header>Bài hát mới</template>
 
     <PlayableListSkeleton v-if="loading" class="border border-k-fg-5 rounded-lg" />
     <template v-else>

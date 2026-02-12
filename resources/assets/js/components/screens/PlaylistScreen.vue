@@ -65,9 +65,9 @@
           </p>
         </template>
         <template v-else>
-          The playlist is currently empty.
+          Danh sách trống
           <span class="block secondary">
-            Drag content into its name in the sidebar or use the &quot;Add To…&quot; button to fill it up.
+            Thêm bài hát vào danh sách phát bằng cách kéo và thả chúng hoặc sử dụng menu ngữ cảnh trên các bài hát.
           </span>
         </template>
       </ScreenEmptyState>

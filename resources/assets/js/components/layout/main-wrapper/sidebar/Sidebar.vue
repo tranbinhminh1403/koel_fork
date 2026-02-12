@@ -25,7 +25,7 @@
     </section>
 
     <section v-if="canUpgradeToPlus" class="p-6 flex-1 flex flex-col-reverse">
-      <BtnUpgradeToPlus />
+      <!-- <BtnUpgradeToPlus /> -->
     </section>
 
     <SidebarToggleButton

@@ -16,7 +16,7 @@ withDefaults(defineProps<{
 const emit = defineEmits<{ (e: 'sort', field: ArtistListSortField, order: SortOrder): void }>()
 
 const items: { label: string, field: ArtistListSortField }[] = [
-  { label: 'Name', field: 'name' },
+  { label: 'Tên', field: 'name' },
   { label: 'Date Added', field: 'created_at' },
 ]
 

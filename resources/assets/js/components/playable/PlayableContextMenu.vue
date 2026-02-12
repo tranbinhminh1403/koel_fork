@@ -1,10 +1,10 @@
 <template>
   <ul>
     <template v-if="onlyOneSelected">
-      <MenuItem @click="doPlayback">{{ firstSongPlaying ? 'Pause' : 'Play' }}</MenuItem>
+      <MenuItem @click="doPlayback">{{ firstSongPlaying ? 'Dừng' : 'Phát' }}</MenuItem>
       <Separator />
       <MenuItem>
-        Go to
+        Chuyển đến
         <template #subMenuItems>
           <template v-if="isSong(playables[0])">
             <MenuItem :title="playables[0].album_name" @click="viewAlbum(playables[0] as Song)">
@@ -47,17 +47,17 @@
       </MenuItem>
     </template>
     <MenuItem>
-      Add To
+      Thêm vào
       <template #subMenuItems>
         <template v-if="queue.length">
-          <MenuItem v-if="currentSong" @click="queueAfterCurrent">After Current</MenuItem>
-          <MenuItem @click="queueToBottom">Bottom of Queue</MenuItem>
-          <MenuItem @click="queueToTop">Top of Queue</MenuItem>
+          <MenuItem v-if="currentSong" @click="queueAfterCurrent">Sau bài hát hiện tại</MenuItem>
+          <MenuItem @click="queueToBottom">Cuối hàng đợi</MenuItem>
+          <MenuItem @click="queueToTop">Đầu hàng đợi</MenuItem>
         </template>
         <MenuItem v-else @click="queueToBottom">Queue</MenuItem>
         <template v-if="!isFavoritesScreen && !(onlyOneSelected && playables[0].favorite)">
           <Separator />
-          <MenuItem @click="addToFavorites">Favorites</MenuItem>
+          <MenuItem @click="addToFavorites">Danh sách yêu thích</MenuItem>
         </template>
         <Separator v-if="normalPlaylists.length" />
         <template class="block">
@@ -68,19 +68,19 @@
           </ul>
         </template>
         <Separator />
-        <MenuItem @click="addToNewPlaylist">New Playlist…</MenuItem>
+        <MenuItem @click="addToNewPlaylist">Danh sách phát mới…</MenuItem>
       </template>
     </MenuItem>
 
     <template v-if="isQueueScreen">
       <Separator />
-      <MenuItem @click="removeFromQueue">Remove from Queue</MenuItem>
+      <MenuItem @click="removeFromQueue">Xóa khỏi hàng đợi</MenuItem>
       <Separator />
     </template>
 
     <template v-if="isFavoritesScreen">
       <Separator />
-      <MenuItem @click="removeFromFavorites">Remove from Favorites</MenuItem>
+      <MenuItem @click="removeFromFavorites">Xoá khỏi danh sách yêu thích</MenuItem>
     </template>
 
     <template v-if="visibilityActions.length">
@@ -91,34 +91,34 @@
     </template>
 
     <MenuItem v-if="onlyOneSelected">
-      Share
+      Chia sẻ
       <template #subMenuItems>
         <MenuItem v-if="canBeShared" @click="copyUrl">
           <template #icon>
             <Icon :icon="faLink" fixed-width />
           </template>
-          Copy URL
+          Sao chép URL
         </MenuItem>
         <MenuItem @click="showEmbedModal">
           <template #icon>
             <Icon :icon="faCode" fixed-width />
           </template>
-          Embed…
+          Nhúng…
         </MenuItem>
       </template>
     </MenuItem>
 
-    <MenuItem v-if="allowEdit" @click="openEditForm">Edit…</MenuItem>
-    <MenuItem v-if="downloadable" @click="download">Download</MenuItem>
+    <MenuItem v-if="allowEdit" @click="openEditForm">Chỉnh sửa…</MenuItem>
+    <MenuItem v-if="downloadable" @click="download">Tải xuống</MenuItem>
 
     <template v-if="canBeRemovedFromPlaylist">
       <Separator />
-      <MenuItem @click="removePlayablesFromPlaylist">Remove from Playlist</MenuItem>
+      <MenuItem @click="removePlayablesFromPlaylist">Xóa khỏi danh sách phát</MenuItem>
     </template>
 
     <template v-if="allowEdit">
       <Separator />
-      <MenuItem @click="deleteFromFilesystem">Delete from Filesystem</MenuItem>
+      <MenuItem @click="deleteFromFilesystem">Xoá khỏi hệ thống</MenuItem>
     </template>
   </ul>
 </template>
