@@ -59,7 +59,7 @@ class InitCommand extends Command
             // $this->maybeCompileFrontEndAssets();
             $this->maybeCopyManifests();
             $this->dotenvEditor->save();
-            $this->tryInstallingScheduler();
+            // $this->tryInstallingScheduler();
         } catch (Throwable $e) {
             Log::error($e);
 
