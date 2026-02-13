@@ -11,7 +11,7 @@
         small
         @click.prevent="goToSongResults"
       >
-        View All
+        Hiển thị tất cả
       </Btn>
     </template>
 

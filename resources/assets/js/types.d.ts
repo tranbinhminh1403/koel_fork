@@ -282,12 +282,14 @@ interface SerializedSmartPlaylistRule {
 type SmartPlaylistInputTypes = Record<SmartPlaylistModel['type'], SmartPlaylistOperator[]>
 
 interface FavoriteList {
-  name: 'Favorites'
+  name: string
+  type: 'Favorites'
   playables: Playable[]
 }
 
 interface RecentlyPlayedList {
-  name: 'Recently Played'
+  name: string
+  type: 'RecentlyPlayed'
   playables: Playable[]
 }
 

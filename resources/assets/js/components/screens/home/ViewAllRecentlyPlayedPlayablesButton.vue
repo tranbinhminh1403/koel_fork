@@ -1,6 +1,6 @@
 <template>
   <Btn highlight rounded small @click.prevent="goToRecentlyPlayedScreen">
-    View All
+    Hiển thị tất cả
   </Btn>
 </template>
 

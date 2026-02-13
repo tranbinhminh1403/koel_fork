@@ -6,8 +6,8 @@
     </SidebarSectionHeader>
 
     <ul>
-      <PlaylistSidebarItem :list="{ name: 'Danh sách yêu thích', playables: favorites }" />
-      <PlaylistSidebarItem :list="{ name: 'Phát gần đây', playables: [] }" />
+      <PlaylistSidebarItem :list="{ type: 'Favorites', name: 'Danh sách yêu thích', playables: favorites }" />
+      <PlaylistSidebarItem :list="{ type: 'RecentlyPlayed', name: 'Phát gần đây', playables: [] }" />
       <PlaylistFolderSidebarItem v-for="folder in folders" :key="folder.id" :folder="folder" />
       <PlaylistSidebarItem v-for="playlist in orphanPlaylists" :key="playlist.id" :list="playlist" />
     </ul>

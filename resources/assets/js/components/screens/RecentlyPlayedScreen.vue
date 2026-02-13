@@ -2,7 +2,7 @@
   <ScreenBase>
     <template #header>
       <ScreenHeader :layout="playables.length === 0 ? 'collapsed' : headerLayout">
-        Recently Played
+        Phát gần đây
 
         <template #thumbnail>
           <ThumbnailStack :thumbnails="thumbnails" />

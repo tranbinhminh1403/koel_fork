@@ -2,7 +2,7 @@
   <ScreenBase>
     <template #header>
       <ScreenHeader :layout="playables.length === 0 ? 'collapsed' : headerLayout">
-        Your Favorites
+        Danh sách yêu thích của bạn
 
         <template #thumbnail>
           <ThumbnailStack :thumbnails="thumbnails" />
@@ -49,11 +49,11 @@
       <template #icon>
         <Icon :icon="faHeartBroken" />
       </template>
-      No favorites yet.
+      Danh sách trống
       <span class="secondary block">
-        Click the&nbsp;
+        Nhấn icon&nbsp;
         <Icon :icon="faStar" />&nbsp;
-        icon to mark a song as favorite.
+        để thêm bài hát vào danh sách yêu thích của bạn.
       </span>
     </ScreenEmptyState>
   </ScreenBase>

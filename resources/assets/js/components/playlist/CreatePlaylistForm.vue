@@ -2,7 +2,7 @@
   <form class="md:w-[480px] w-full" @submit.prevent="handleSubmit" @keydown.esc="maybeClose">
     <header>
       <h1>
-        New Playlist
+        Danh sách phát mới
         <span v-if="playables.length" data-testid="from-playables">from {{ pluralize(playables, entityName) }}</span>
       </h1>
     </header>

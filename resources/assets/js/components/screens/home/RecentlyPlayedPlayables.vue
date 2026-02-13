@@ -1,7 +1,7 @@
 <template>
   <HomeScreenBlock>
     <template #header>
-      Recently Played
+      Phát gần đây
       <ViewAllRecentlyPlayedPlayablesButton v-if="playables.length" class="float-right" />
     </template>
 
